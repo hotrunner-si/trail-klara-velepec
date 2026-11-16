@@ -7,6 +7,7 @@ export default {
     "instagram": "https://www.instagram.com/klaravelepec/",
     "email": ""
   },
+  "bio": "Klara Velepec tekmuje v trail teku in turnem smučanju. V Kranjski Gori je zmagala na 25-kilometrski preizkušnji Julian Alps Trail Runa, v Morginsu pa postala mladinska svetovna prvakinja v vzponu.",
   "trail": {
     "title": "Trail tek",
     "intro": "Klara Velepec je na Julian Alps Trail Runu zmagala na 25-kilometrski preizkušnji v Kranjski Gori. Na Lavaredo 20K je bila druga med ženskami.",
@@ -20,7 +21,12 @@ export default {
         "2. mesto",
         "Lavaredo 20K · 2026",
         "1:54:55 · med ženskami"
-      ]
+      ],
+      ["16. mesto","Pitz Alpine Glacier Trail · 2026","2:57:17 · med ženskami"],
+      ["2. mesto","UTVV Legionar 30 km · 2026","3:08:01 · med ženskami"],
+      ["1. mesto","K24 Ultra Trail · 24 KM · 2025","2:18:47 · med ženskami"],
+      ["21. mesto","Vauban Mountain Trail · Montée verticale · 2025","0:58:39 · med ženskami"],
+      ["1. mesto","Kriška Gora Trail · Muflon · 2025","2:57:31 · med ženskami"]
     ],
     "source": "https://utmb.world/runner/7337166.klara.velepec",
     "gallery": [

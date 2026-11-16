@@ -45,7 +45,12 @@ export const english = {
         "2nd",
         "Lavaredo 20K · 2026",
         "1:54:55 · women"
-      ]
+      ],
+      ["16th","Pitz Alpine Glacier Trail · 2026","2:57:17 · women"],
+      ["2nd","UTVV Legionar 30 km · 2026","3:08:01 · women"],
+      ["1st","K24 Ultra Trail · 24 KM · 2025","2:18:47 · women"],
+      ["21st","Vauban Mountain Trail · Montée verticale · 2025","0:58:39 · women"],
+      ["1st","Kriška Gora Trail · Muflon · 2025","2:57:31 · women"]
     ],
     "gallery": [
       {
