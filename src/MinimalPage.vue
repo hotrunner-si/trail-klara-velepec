@@ -3,14 +3,17 @@ import { computed, ref } from 'vue'
 import athlete from './athlete.js'
 
 const props = defineProps({ version: String, imageBase: String })
-const isSplit = props.version === 'v2'
+const isSplit = false
 const isCompact = props.version === 'v3'
 const compactMenu = [['trail', 'Trail tek']]
 if (athlete.skimo) compactMenu.push(['skimo', 'Skimo'])
 compactMenu.push(['contact', 'Kontakti'])
-const menu = isCompact
+const menu = computed(() => {
+  const items = isCompact
   ? compactMenu
   : [['about', 'O meni'], ['results', 'Rezultati'], ['gallery', 'Galerija'], ['contact', 'Kontakt']]
+  return isCompact ? [['about', 'O meni'], ...items] : items
+})
 
 const active = ref('about')
 const coverSport = ref('trail')
@@ -49,9 +52,9 @@ function selectSection(id) {
 
     <div class="content">
       <nav v-if="!isSplit" aria-label="Vsebina">
-        <button v-for="[id, label] in menu" :key="id" type="button"
+        <button v-for="[id, label] in menu" :key="id" :data-label="label" type="button"
           :aria-pressed="active === id" @click="selectSection(id)">
-          {{ label }}
+          <span class="nav-label">{{ label }}</span>
         </button>
       </nav>
 

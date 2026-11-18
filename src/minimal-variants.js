@@ -3,6 +3,7 @@ import MinimalPage from './MinimalPage.vue'
 import './minimal-variants.css'
 
 const target = document.getElementById('app')
+document.documentElement.dataset.theme = target.dataset.theme ?? 'default'
 const imageBase = import.meta.env.DEV
   ? import.meta.env.BASE_URL + 'images/'
   : new URL(/* @vite-ignore */ '../images/', import.meta.url).href
